@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: api-managment-service
+  annotations:
+    github.com/project-slug: ingka-group-digital/test-repo-component
+    github.com/team-slug: ingka-group-digital/api-management
+    backstage.io/techdocs-ref: url:https://github.com/ingka-group-digital/test-repo-component
+    ilert.com/integration-key: '2220036'
+spec:
+  type: service
+  owner: api-management
+  lifecycle: experimental
+  system: apim
+  providesApis:
+    - api:stage/apim-provider-api
+  
